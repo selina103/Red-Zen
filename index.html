@@ -5,100 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Red Zen</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+<header class="site-header">
+  <div class="logo">
+    <img src="Grafiken/Logo_RedZen.png" alt="Red Zen Logo" />
+  </div>
+</header>
+
 </head>
 <body>
-
-    <section class="hero">
-        <img src="/Grafiken/Startbild.png" alt="Red Zen Can" class="hero-image">
-        <div class="hero-tagline">
-          <p><span>Natürlich</span> <span>Beruhigend</span> <span>Kraftvoll</span></p>
-        </div>
-      </section>
-      
-      
+  <picture>
+    <!-- 💻 Desktop -->
+    <source media="(min-width: 1024px)" srcset="Grafiken/Desktop.png">
+    
+    <!-- 📱 Mobile (Standard) -->
+    <img src="Grafiken/Startbild.png"alt="Red Zen Dose" class="hero-img">
+  </picture>
+  
+ <section class="values">
+  <div class="value-card animated delay-1">
+    <i data-lucide="leaf"></i>
+    <p>Natürlich</p>
+  </div>
+  <div class="value-card animated delay-2">
+    <i data-lucide="moon"></i>
+    <p>Beruhigend</p>
+  </div>
+  <div class="value-card animated delay-3">
+    <i data-lucide="glass-water"></i>
+    <p>Lecker</p>
+  </div>
+</section>
 
       <section class="why-red-zen">
         <h2>Warum Red Zen?</h2>
         <div class="benefit">
-          <h3>🌿 Natürliche Energie</h3>
+          <h3><i data-lucide="leaf" class="icon-style"></i> Natürlich & vegan</h3>
           <p>Red Zen gibt dir sanften Fokus – ohne Koffein-Crash oder nervöses Zittern.</p>
         </div>
         <div class="benefit">
-          <h3>🧘‍♂️ Stressreduktion</h3>
+          <h3><i data-lucide="brain" class="icon-style"></i>Stressreduktion</h3>
           <p>Dank Ashwagandha & Rhodiola hilft dir Red Zen, entspannt & klar zu bleiben – selbst an hektischen Tagen.</p>
         </div>
         <div class="benefit">
-          <h3>🍋 Einzigartiger Geschmack</h3>
+          <h3><i data-lucide="citrus" class="icon-style"></i> Einzigartiger Geschmack</h3>
           <p>Eine fruchtig-frische Fusion aus Zitrone, Matcha & Hibiskus – herb, leicht & angenehm überraschend.</p>
         </div>
         <div class="benefit">
-          <h3>💚 Bewusster Genuss</h3>
+          <h3><i data-lucide="heart" class="icon-style"></i> Bewusster Genuss</h3>
           <p>100% vegan, natürlich & ohne Bullshit – für Körper & Geist im Gleichgewicht.</p>
         </div>
       </section>
     
       <section class="ingredients-flip">
-        <h2>✨ Zutaten, die wirken</h2>
-        <div class="flip-grid">
-          <div class="flip-card">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <h3>Zitrone & Minze</h3>
-              </div>
-              <div class="flip-back">
-                <p>Frisch & belebend – dein natürlicher Kickstart.</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="flip-card">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <h3>Hibiskus</h3>
-              </div>
-              <div class="flip-back">
-                <p>Antioxidativ & harmonisierend für deinen Flow.</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="flip-card">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <h3>Matcha</h3>
-              </div>
-              <div class="flip-back">
-                <p>Langsame Energie – Fokus ohne Koffein-Crash.</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="flip-card">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <h3>Ashwagandha</h3>
-              </div>
-              <div class="flip-back">
-                <p>Reduziert Cortisol – Ruhe von innen heraus.</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="flip-card">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <h3>Rhodiola</h3>
-              </div>
-              <div class="flip-back">
-                <p>Balance für Körper & Geist in stressigen Zeiten.</p>
-              </div>
-            </div>
-          </div>
+  <h2>Zutaten, die wirken</h2>
+  <p class="tap-hint">Tippe auf eine Zutat, um mehr zu erfahren</p>
+
+  <div class="flip-grid">
+
+    <div class="flip-card" >
+      <div class="flip-inner">
+        <div class="flip-front bg-zitrone">
+          <div class="overlay"><h3>Zitrone & Minze</h3></div>
         </div>
-      </section>
+        <div class="flip-back">
+          <p>Frisch & belebend – dein natürlicher Kickstart.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" >
+      <div class="flip-inner">
+        <div class="flip-front bg-hibiskus">
+          <div class="overlay"><h3>Hibiskus</h3></div>
+        </div>
+        <div class="flip-back">
+          <p>Antioxidativ & harmonisierend für deinen Flow.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" >
+      <div class="flip-inner">
+        <div class="flip-front bg-matcha">
+          <div class="overlay"><h3>Matcha</h3></div>
+        </div>
+        <div class="flip-back">
+          <p>Sorgt für nachhaltige Energie ohne Koffein-Crash.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" >
+      <div class="flip-inner">
+        <div class="flip-front bg-ashwaganda">
+          <div class="overlay"><h3>Ashwagandha</h3></div>
+        </div>
+        <div class="flip-back">
+          <p>Reduziert Cortisol – Ruhe von innen heraus.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" >
+      <div class="flip-inner">
+        <div class="flip-front bg-rhodiola">
+          <div class="overlay"><h3>Rhodiola</h3></div>
+        </div>
+        <div class="flip-back">
+          <p>Balance für Körper & Geist in stressigen Zeiten.</p>
+        </div>
+      </div>
+    </div>
+ <div class="flip-card" >
+      <div class="flip-inner">
+        <div class="flip-front bg-ginseng">
+          <div class="overlay"><h3>Ginseng</h3></div>
+        </div>
+        <div class="flip-back">
+          <p>Für wache Klarheit und langanhaltende Power.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
       
       <section class="testimonials">
-        <h2 class="section-title">💬Was andere sagen</h2>
+        <h2 class="section-title">Was andere sagen</h2>
 
         <div class="testimonial-slider">
           <div class="testimonial-card">
@@ -117,9 +154,16 @@
             <img src="/Grafiken/Testimonial strand opa.jpg" alt="Kunde 4">
             <p>"Stylisch, vegan & natürlich – das triffts einfach auf den Punkt!"</p>
           </div>
+           <div class="testimonial-card">
+            <img src="/Grafiken/Business_Man.jpg" alt="Kunde 4">
+            <p>„Meetings, Deadlines, E-Mails – Red Zen bringt mir den Zen-Modus zurück.“</p>
+          </div>
         </div>
-        <div class="arrow left">←</div>
-         <div class="arrow right">→</div>
+        <div class="testimonial-nav">
+  <i data-lucide="chevron-left" class="testimonial-arrow"></i>
+  <i data-lucide="chevron-right" class="testimonial-arrow"></i>
+</div>
+
       </section>
       
       <section class="cta-section">
@@ -140,10 +184,10 @@
             <a href="#">Kontakt</a>
           </nav>
           <div class="footer-socials">
-            <a href="#"><img src="insta-icon.svg" alt="Instagram"></a>
-            <a href="#"><img src="mail-icon.svg" alt="E-Mail"></a>
+            <i data-lucide="instagram"></i>
+            <i data-lucide="mail"></i>
           </div>
-        </div>
+          
         <div class="footer-bottom">
           <p>&copy; 2025 RED ZEN – Energy Without the Chaos</p>
           <a href="#">Impressum</a>
@@ -151,6 +195,10 @@
         </div>
       </footer>
       
+      <script>
+        lucide.createIcons();
+      </script>
+      <script src="script.js"></script>
 
 </body>
 </html>
